@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+logs/*
+!logs/.gitkeep
+data/*
+!data/.gitkeep
+*.db
+*.sqlite
+*.csv
+.airflowignore
