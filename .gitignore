@@ -1,0 +1,31 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Airflow runtime artifacts ---
+logs/*
+!logs/.gitkeep
+plugins/*
+!plugins/.gitkeep
+config/*
+!config/.gitkeep
+
+# --- Pipeline outputs ---
+# Keep the data directory but ignore the artifacts the pipeline creates.
+data/*
+!data/.gitkeep
+
+# --- Local env ---
+.env
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
